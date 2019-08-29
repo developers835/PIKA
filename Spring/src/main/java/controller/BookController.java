@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import model.Book;
 import service.BookService;
 
-@Controller
+@Controller 
 @RequestMapping("Book")
 public class BookController {
 	

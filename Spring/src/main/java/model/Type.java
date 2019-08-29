@@ -1,5 +1,5 @@
 package model;
-
+  
 public class Type {
 	int id;
 	String name;

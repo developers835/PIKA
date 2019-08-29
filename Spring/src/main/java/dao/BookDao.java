@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import model.Book;
 
-@Repository
+@Repository 
 public interface BookDao {
 	@Select("select book.*,type.name typename from book inner join type on type.id=book.typeid ${txt} ")
 	public List<Book> select(@Param("txt") String txt);

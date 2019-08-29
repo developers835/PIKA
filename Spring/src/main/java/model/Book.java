@@ -1,5 +1,5 @@
 package model;
-
+  
 public class Book {
 	String sexs[]= {"未知","男","女"};
 	int id;
