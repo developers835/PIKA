@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.Book1_Dao">
+<select id="select" resultType="model.Book" parameterType="java.lang.String">  <!-- resultType:返回结果 -->
+select book.*,type.name typename from book inner join type on type.id=book.typeid ${_parameter}
+</select>
+</mapper>
