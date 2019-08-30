@@ -1,10 +1,11 @@
 package model;
   
 public class Book {
-	String sexs[]= {"未知","男","女"};
+	public static String sexs[]= {"未知","男","女"};
 	int id;
 	String name;
 	int sex;
+	int typeid;
 	String typename;
 	public Book() {
 		
@@ -29,6 +30,13 @@ public class Book {
 	}
 	public String getSexname() {
 		return sexs[sex];
+	}
+	
+	public int getTypeid() {
+		return typeid;
+	}
+	public void setTypeid(int typeid) {
+		this.typeid = typeid;
 	}
 	public String getTypename() {
 		return typename;

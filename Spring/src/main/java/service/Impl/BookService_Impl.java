@@ -18,4 +18,25 @@ public class BookService_Impl implements BookService{
 		return dao.select(txt);
 	}
 
+	
+	public Book selectById(int id) {
+		return dao.selectById(id);
+	}
+
+	
+	public void insert(Book b) {
+		dao.insert(b);
+	}
+
+	
+	public void delete(int id) {
+		dao.delete(id);
+	}
+
+	
+	public void update(Book b) {
+		dao.update(b);
+	}
+
+	
 }
